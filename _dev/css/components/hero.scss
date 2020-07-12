@@ -1,0 +1,36 @@
+.hero {
+    max-width: 550px;
+    text-align: right;
+
+    .hero__content {
+        margin-bottom: 204px;
+    }
+
+    .hero__surtext {
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        margin-bottom: $spacer / 2;
+    }
+
+    .hero__subtext {
+        font-weight: 900;
+        font-size: 118px;
+        line-height: 138px;
+        letter-spacing: 0.06em;
+        color: $secondary;
+        margin-bottom: $spacer * 2;
+    }
+
+    .hero__description {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        color: #939393;
+
+        &.--orange {
+            color: $primary;
+        }
+    }
+}

@@ -9,9 +9,13 @@
 
 //Components
 @import "./components/header.scss";
+@import "./components/hero.scss";
+@import "./components/cta.scss";
 
 //Common
 body {
+    overflow: hidden;
+    padding: $spacer * 4 $spacer * 4 0 $spacer * 4;
     background-image: url("../img/toppng.png");
     background-position: center right;
     background-size: 100vh;

@@ -1,8 +1,8 @@
 .header {
-    padding: $spacer * 4 $spacer * 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: (146 / 16) * $spacer;
 
     .header__block {
         &.--flex {
@@ -33,13 +33,16 @@
 
     .header__nav {
         .nav__item {
+            display: inline-block;
             margin: 0 (12.5 / 16) * $spacer;
             color: black;
             font-size: 18px;
             line-height: 21px;
             letter-spacing: 0.1em;
+            transition: .2s ease-in-out;
 
             &:hover {
+                transform: scale(1.2);
                 text-decoration: none;
             }
 
@@ -52,6 +55,12 @@
     .header__socials {
         .socials__icons {
             margin-right: (28 / 16) * $spacer;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                text-decoration: none;
+            }
         }
     }
 

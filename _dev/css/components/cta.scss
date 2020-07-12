@@ -1,0 +1,27 @@
+.cta {
+    .breadcrumb {
+        background: transparent;
+
+        .breadcrumb__dot {
+            width: 10px;
+            height: 10px;
+            background: #939393;
+            border-radius: 50%;
+            margin-right: (10/16) * $spacer;
+
+            &.--active {
+                background: $primary;
+            }
+        }
+    }
+
+    .cta__scroll {
+        p {
+            margin-bottom: (12 / 16) * $spacer;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
