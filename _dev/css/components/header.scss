@@ -1,5 +1,14 @@
 .header {
     padding: $spacer * 4 $spacer * 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__block {
+        &.--flex {
+            display: flex;
+        }
+    }
 
     .header__title {
         text-transform: uppercase;
@@ -11,5 +20,46 @@
         /* identical to box height */
 
         letter-spacing: 0.42em;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 32%;
+            height: 5px;
+            background: $primary;
+            border-radius: 20px;
+        }
+    }
+
+    .header__nav {
+        .nav__item {
+            margin: 0 (12.5 / 16) * $spacer;
+            color: black;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.1em;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &.--active {
+                color: $primary;
+            }
+        }
+    }
+
+    .header__socials {
+        .socials__icons {
+            margin-right: (28 / 16) * $spacer;
+        }
+    }
+
+    .header__search {
+        .search__icon {
+            background: transparent;
+            border: none;
+            margin: 0 $spacer;
+        }
     }
 }
