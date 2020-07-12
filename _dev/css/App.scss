@@ -1,0 +1,69 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+//Abstract
+@import "./abstract/variables";
+@import "./abstract/responsive";
+
+//Base
+@import "./base/fonts";
+@import "./base/typography";
+
+//Components
+@import "./components/header.scss";
+
+//Common
+.body__slope {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.body__background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &.--left {
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 50%;
+        height: 100%;
+        background: white;
+    }
+
+    &.--right {
+        left: inherit;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background: rgb(235, 118, 59);
+        background: linear-gradient(180deg, rgba(235, 118, 59, 1) 0%, rgba(241, 161, 47, 1) 100%);
+    }
+
+    .background__circle {
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 450px;
+        height: 450px;
+        background: linear-gradient(0deg, rgba(235, 118, 59, 1) 0%, rgba(241, 161, 47, 1) 100%);
+        border-radius: 50%;
+        border: 20px solid white;
+    }
+}
+
+.diagonal {
+    position: absolute;
+    left: 50%;
+    width: 0px;
+    border-width: 100vh 200px 0px 0px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+//Responsive
+@import "./abstract/responsiveClasses";

@@ -1,0 +1,15 @@
+.header {
+    padding: $spacer * 4 $spacer * 2;
+
+    .header__title {
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 47px;
+        /* identical to box height */
+
+        letter-spacing: 0.42em;
+    }
+}
